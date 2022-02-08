@@ -9,27 +9,28 @@ push(a) – Inserts the element ‘a’ at the top of the stack – Time Complex
 pop() – Deletes the topmost element of the stack – Time Complexity: O(1)
 
 """
+from typing import List, Union
 
 
 class Stack:
     def __init__(self):
         self.items = []
 
-    def push(self, item):
+    def push(self, item) -> None:
         self.items.append(item)
 
-    def pop(self):
+    def pop(self) -> Union[int, str, float]:
         return self.items.pop()
 
-    def isEmpty(self):
+    def isEmpty(self) -> List:
         return self.items == []
 
-    def peek(self):
+    def peek(self) -> Union[int, str, float]:
         if not self.isEmpty():
             return self.items[-1]
         return None
 
-    def getStack(self):
+    def getStack(self) -> List:
         return self.items
 
 
