@@ -20,12 +20,14 @@ jobs:
     - name: Display Python version
       run: python --version
 
-    - name: Install Pytest
-      run: pip3 install pytest
+    - name: Install dependencies
+      run: pip3 install pytest icecream
+
+    - name: Run Pytest
+    - run: pytest
 
     - name: Run Script
       run: |
         python ./stack/next_greatest_element_using_stacks.py
 
-    # - name: Run Pytest
-    # - run: pytest
+
