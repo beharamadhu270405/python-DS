@@ -42,5 +42,7 @@ def nextLargestElment(items):
 
 
 if __name__ == '__main__':
-    ic(nextLargestElment([int(item)
-                          for item in input("Enter the list items : ").strip().split()]))
+    # ic(nextLargestElment([int(item)
+    #                       for item in input("Enter the list items : ").strip().split()]))
+
+    ic(nextLargestElment([2, 6, 5, 4, 19]))
