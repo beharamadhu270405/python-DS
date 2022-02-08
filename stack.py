@@ -21,11 +21,11 @@ class Stack:
     def pop(self):
         return self.items.pop()
 
-    def is_empty(self):
+    def isEmpty(self):
         return self.items == []
 
     def peek(self):
-        if not self.is_empty():
+        if not self.isEmpty():
             return self.items[-1]
         return None
 
@@ -44,4 +44,4 @@ if __name__ == '__main__':
     print("Stack:", myStack.getStack())
     print("Peeking the Top element in the Stack:", myStack.peek())
     print("Stack:", myStack.getStack())
-    print("Checking is Stack empty:", myStack.is_empty())
+    print("Checking is Stack empty:", myStack.isEmpty())
