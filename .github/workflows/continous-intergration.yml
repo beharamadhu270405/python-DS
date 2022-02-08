@@ -24,7 +24,6 @@ jobs:
       run: pip3 install pytest
 
     - name: Run Script
-      working-directory: ./app
       run: |
         python ./stack/next_greatest_element_using_stacks.py
 
